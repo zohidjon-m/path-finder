@@ -1,0 +1,377 @@
+{
+  "nodes": {
+    "Tashkent": {
+      "coords": [
+        41.3111,
+        69.2797
+      ],
+      "edges": {
+        "Samarkand": 310,
+        "Jizzakh": 205,
+        "Gulistan": 115,
+        "Namangan": 235,
+        "Chirchiq": 35,
+        "Olmaliq": 65,
+        "Angren": 90,
+        "Bekabad": 140
+      }
+    },
+    "Samarkand": {
+      "coords": [
+        39.6542,
+        66.9597
+      ],
+      "edges": {
+        "Tashkent": 310,
+        "Jizzakh": 105,
+        "Navoi": 165,
+        "Bukhara": 250,
+        "Karshi": 155,
+        "Kattakurgan": 75,
+        "Shahrisabz": 75,
+        "Zaamin": 145
+      }
+    },
+    "Bukhara": {
+      "coords": [
+        39.7747,
+        64.4286
+      ],
+      "edges": {
+        "Samarkand": 250,
+        "Navoi": 100,
+        "Urgench": 435,
+        "Gijduvan": 50
+      }
+    },
+    "Navoi": {
+      "coords": [
+        40.1039,
+        65.3683
+      ],
+      "edges": {
+        "Jizzakh": 240,
+        "Samarkand": 165,
+        "Bukhara": 100,
+        "Karshi": 165,
+        "Gijduvan": 65,
+        "Zarafshan": 220,
+        "Uchkuduk": 315
+      }
+    },
+    "Urgench": {
+      "coords": [
+        41.5533,
+        60.6314
+      ],
+      "edges": {
+        "Bukhara": 435,
+        "Khiva": 35,
+        "Nukus": 150
+      }
+    },
+    "Khiva": {
+      "coords": [
+        41.379,
+        60.3573
+      ],
+      "edges": {
+        "Urgench": 35
+      }
+    },
+    "Nukus": {
+      "coords": [
+        42.46,
+        59.6103
+      ],
+      "edges": {
+        "Urgench": 150,
+        "Xojayli": 15
+      }
+    },
+    "Namangan": {
+      "coords": [
+        41.0,
+        71.6667
+      ],
+      "edges": {
+        "Tashkent": 235,
+        "Andijan": 70,
+        "Kokand": 90,
+        "Chust": 40
+      }
+    },
+    "Andijan": {
+      "coords": [
+        40.7833,
+        72.3333
+      ],
+      "edges": {
+        "Namangan": 70,
+        "Fergana": 75,
+        "Quvasoy": 70,
+        "Margilan": 70
+      }
+    },
+    "Fergana": {
+      "coords": [
+        40.3892,
+        71.7833
+      ],
+      "edges": {
+        "Kokand": 85,
+        "Andijan": 75,
+        "Margilan": 10,
+        "Quvasoy": 25
+      }
+    },
+    "Jizzakh": {
+      "coords": [
+        40.115,
+        67.842
+      ],
+      "edges": {
+        "Tashkent": 205,
+        "Samarkand": 105,
+        "Navoi": 240,
+        "Gulistan": 105,
+        "Kattakurgan": 155,
+        "Zaamin": 60
+      }
+    },
+    "Karshi": {
+      "coords": [
+        38.8606,
+        65.789
+      ],
+      "edges": {
+        "Samarkand": 155,
+        "Navoi": 165,
+        "Termez": 255,
+        "Shahrisabz": 105,
+        "Denov": 225
+      }
+    },
+    "Termez": {
+      "coords": [
+        37.2249,
+        67.2783
+      ],
+      "edges": {
+        "Karshi": 255,
+        "Sherobod": 65
+      }
+    },
+    "Kokand": {
+      "coords": [
+        40.5286,
+        70.9425
+      ],
+      "edges": {
+        "Namangan": 90,
+        "Fergana": 85,
+        "Chust": 65,
+        "Margilan": 75
+      }
+    },
+    "Gulistan": {
+      "coords": [
+        40.4897,
+        68.7842
+      ],
+      "edges": {
+        "Tashkent": 115,
+        "Jizzakh": 105,
+        "Bekabad": 60,
+        "Zaamin": 80
+      }
+    },
+    "Chirchiq": {
+      "coords": [
+        41.4689,
+        69.5825
+      ],
+      "edges": {
+        "Tashkent": 35
+      }
+    },
+    "Angren": {
+      "coords": [
+        41.0167,
+        70.1436
+      ],
+      "edges": {
+        "Tashkent": 90,
+        "Olmaliq": 55
+      }
+    },
+    "Olmaliq": {
+      "coords": [
+        40.8486,
+        69.5986
+      ],
+      "edges": {
+        "Tashkent": 65,
+        "Angren": 55
+      }
+    },
+    "Bekabad": {
+      "coords": [
+        40.22,
+        69.2694
+      ],
+      "edges": {
+        "Tashkent": 140,
+        "Gulistan": 60
+      }
+    },
+    "Kattakurgan": {
+      "coords": [
+        39.8989,
+        66.265
+      ],
+      "edges": {
+        "Samarkand": 75,
+        "Jizzakh": 155
+      }
+    },
+    "Shahrisabz": {
+      "coords": [
+        39.0575,
+        66.8333
+      ],
+      "edges": {
+        "Samarkand": 75,
+        "Karshi": 105
+      }
+    },
+    "Denov": {
+      "coords": [
+        38.2775,
+        67.8875
+      ],
+      "edges": {
+        "Karshi": 225,
+        "Sherobod": 120
+      }
+    },
+    "Sherobod": {
+      "coords": [
+        37.679,
+        67.0001
+      ],
+      "edges": {
+        "Denov": 120,
+        "Termez": 65
+      }
+    },
+    "Gijduvan": {
+      "coords": [
+        40.1,
+        64.6833
+      ],
+      "edges": {
+        "Bukhara": 50,
+        "Navoi": 65
+      }
+    },
+    "Zarafshan": {
+      "coords": [
+        41.5833,
+        64.2
+      ],
+      "edges": {
+        "Navoi": 220,
+        "Uchkuduk": 95
+      }
+    },
+    "Uchkuduk": {
+      "coords": [
+        42.15,
+        63.5667
+      ],
+      "edges": {
+        "Navoi": 315,
+        "Zarafshan": 95
+      }
+    },
+    "Zaamin": {
+      "coords": [
+        39.9553,
+        68.3953
+      ],
+      "edges": {
+        "Jizzakh": 60,
+        "Samarkand": 145,
+        "Gulistan": 80
+      }
+    },
+    "Chust": {
+      "coords": [
+        41.0,
+        71.2333
+      ],
+      "edges": {
+        "Namangan": 40,
+        "Kokand": 65
+      }
+    },
+    "Asaka": {
+      "coords": [
+        40.6417,
+        72.2386
+      ],
+      "edges": {}
+    },
+    "Margilan": {
+      "coords": [
+        40.4722,
+        71.7247
+      ],
+      "edges": {
+        "Kokand": 75,
+        "Fergana": 10,
+        "Andijan": 70
+      }
+    },
+    "Quvasoy": {
+      "coords": [
+        40.2972,
+        71.9814
+      ],
+      "edges": {
+        "Fergana": 25,
+        "Andijan": 70
+      }
+    },
+    "Kungrad": {
+      "coords": [
+        43.0833,
+        58.9
+      ],
+      "edges": {
+        "Xojayli": 100,
+        "Mo‘ynoq": 90
+      }
+    },
+    "Mo‘ynoq": {
+      "coords": [
+        43.7683,
+        59.0217
+      ],
+      "edges": {
+        "Kungrad": 90
+      }
+    },
+    "Xojayli": {
+      "coords": [
+        42.4,
+        59.45
+      ],
+      "edges": {
+        "Nukus": 15,
+        "Kungrad": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nodes": {
+    "Arad":     { "coords": [46.1667, 21.3167], "edges": { "Zerind": 75, "Sibiu": 140, "Timisoara": 118 } },
+    "Zerind":   { "coords": [46.6167, 21.5167], "edges": { "Arad": 75, "Oradea": 71 } },
+    "Oradea":   { "coords": [47.0667, 21.9333], "edges": { "Zerind": 71, "Sibiu": 151 } },
+    "Sibiu":    { "coords": [45.8000, 24.1500], "edges": { "Oradea": 151, "Arad": 140, "Fagaras": 99, "Rimnicu": 80 } },
+    "Timisoara":{ "coords": [45.7597, 21.2300], "edges": { "Arad": 118, "Lugoj": 111 } },
+    "Lugoj":    { "coords": [45.6900, 21.9000], "edges": { "Timisoara": 111, "Mehadia": 70 } },
+    "Mehadia":  { "coords": [44.9000, 22.3500], "edges": { "Lugoj": 70, "Dobreta": 75 } },
+    "Dobreta":  { "coords": [44.6369, 22.6597], "edges": { "Mehadia": 75, "Craiova": 120 } },
+    "Craiova":  { "coords": [44.3167, 23.8000], "edges": { "Dobreta": 120, "Pitesti": 138, "Rimnicu": 146 } },
+    "Rimnicu":  { "coords": [45.1000, 24.3667], "edges": { "Craiova": 146, "Sibiu": 80, "Pitesti": 97 } },
+    "Fagaras":  { "coords": [45.8416, 24.9731], "edges": { "Sibiu": 99, "Bucharest": 211 } },
+    "Pitesti":  { "coords": [44.8565, 24.8692], "edges": { "Rimnicu": 97, "Craiova": 138, "Bucharest": 101 } },
+    "Bucharest":{ "coords": [44.4268, 26.1025], "edges": { "Fagaras": 211, "Pitesti": 101, "Giurgiu": 90, "Urziceni": 85 } },
+    "Giurgiu":  { "coords": [43.9000, 25.9667], "edges": { "Bucharest": 90 } },
+    "Eforie":   { "coords": [44.0667, 28.6333], "edges": { "Hirsova": 86 } },
+    "Hirsova":  { "coords": [44.6833, 27.9500], "edges": { "Eforie": 86, "Urziceni": 98 } },
+    "Urziceni": { "coords": [44.7167, 26.6333], "edges": { "Vaslui": 142, "Bucharest": 85, "Hirsova": 98 } },
+    "Vaslui":   { "coords": [46.6333, 27.7333], "edges": { "Iasi": 92, "Urziceni": 142 } },
+    "Iasi":     { "coords": [47.1622, 27.5889], "edges": { "Neamt": 87, "Vaslui": 92 } },
+    "Neamt":    { "coords": [46.9167, 26.3333], "edges": { "Iasi": 87 } }
+  }
+}
