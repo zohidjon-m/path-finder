@@ -48,6 +48,9 @@ def reconstruct_path(goal_node):
     return path[::-1], total_cost
 
 def a_star(graph, start_name, goal_name):
+    if start_name == goal_name:
+        return [start_name], 0.0
+    
     nodes = create_Nodes_from_graph(graph)
     if start_name not in nodes or goal_name not in nodes:
         raise ValueError("Start or goal not in graph.")

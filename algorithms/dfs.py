@@ -36,9 +36,9 @@ def dfs(nodes, start, goal):
                 stack.append(v)
     return None, math.inf
 
-if __name__ == "__main__":
-    nodes = load_graph("uzbekistan_cities_graph_extended.json")
-    start, goal = "Tashkent", "Bukhara"
-    path, cost = dfs(nodes, start, goal)
-    print("DFS path:", " -> ".join(path))
-    print("Approx. cost:", round(cost, 1))
+# if __name__ == "__main__":
+#     nodes = load_graph("uzbekistan_cities_graph_extended.json")
+#     start, goal = "Tashkent", "Bukhara"
+#     path, cost = dfs(nodes, start, goal)
+#     print("DFS path:", " -> ".join(path))
+#     print("Approx. cost:", round(cost, 1))

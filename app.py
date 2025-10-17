@@ -2,6 +2,7 @@ import time
 import streamlit as st
 from utils.graph_io import load_country_list, get_graph
 from utils.mapping import path_to_lonlat, viewport_for
+import pydeck as pdk
 
 #algorithms
 from algorithms.ucs import ucs
@@ -55,7 +56,7 @@ COMPLEXITY = {
         "Optimal?": "No (uses only h)"
     },
     "A*": {
-        "Time": "Worst-case ≈ O((V + E) log V); often much less if h is informative",
+        "Time": "≈ O((V + E) log V); often much less if h is informative",
         "Space": "O(V)",
         "Optimal?": "Yes if h is admissible; tree/graph-optimal if h is consistent"
     }
@@ -115,13 +116,13 @@ elif run:
             # draw map if coords available
             lonlat = path_to_lonlat(nodes, res["path"])
             if lonlat:
-                import pydeck as pdk
                 view = pdk.ViewState(**viewport_for(lonlat))
                 line = pdk.Layer(
                     "PathLayer",  # lightweight line layer
                     data=[{"path": lonlat}],
                     get_path="path",
                     width_min_pixels=4,
+                    get_color=[255, 0, 0],
                 )
                 start_marker = pdk.Layer(
                     "ScatterplotLayer",
@@ -135,6 +136,10 @@ elif run:
                     get_position="pos",
                     get_radius=7000,
                 )
-                st.pydeck_chart(pdk.Deck(layers=[line, start_marker, goal_marker], initial_view_state=view))
+                st.pydeck_chart(pdk.Deck(
+                    map_style="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+                    layers=[line, start_marker, goal_marker],
+                    initial_view_state=view
+                    ))
             else:
                 st.caption("No coordinates available for one or more cities; map omitted.")

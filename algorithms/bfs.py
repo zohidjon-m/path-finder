@@ -33,9 +33,9 @@ def bfs(nodes, start, goal):
                 queue.append(v)
     return None, None
 
-if __name__ == "__main__":
-    nodes = load_graph("uzbekistan_cities_graph_extended.json")
-    start, goal = "Tashkent", "Bukhara"
-    path, hops = bfs(nodes, start, goal)
-    print("BFS path:", " -> ".join(path))
-    print("Number of hops:", hops)
+# if __name__ == "__main__":
+#     nodes = load_graph("uzbekistan_cities_graph_extended.json")
+#     start, goal = "Tashkent", "Bukhara"
+#     path, hops = bfs(nodes, start, goal)
+#     print("BFS path:", " -> ".join(path))
+#     print("Number of hops:", hops)
