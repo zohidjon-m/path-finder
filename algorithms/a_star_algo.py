@@ -24,8 +24,8 @@ class Node:
         self.parent = None
     def __lt__(self, other):  # heap by f
         return self.f < other.f
-    def __hash__(self):       # allow set/dict by identity (name unique assumed)
-        return hash(id(self))
+    def __hash__(self):       # allow set/dict by identity (name unique)
+        return hash(self.name)
 
 def create_Nodes_from_graph(data):
     # create nodes
@@ -90,10 +90,9 @@ def a_star(graph, start_name, goal_name):
 
     return None, float('inf')  # no path
 
-# --- example usage ---
-# nodes = load_graph_from_json(r"D:\sejong_major\ai\projects\mini_map\data\uzbekistan_cities.json")
+# nodes = load_graph_from_json(r"D:\sejong_major\ai\projects\mini_map\data\uzbekistan.json")
 # nodes = load_graph_from_json(r"D:\sejong_major\ai\projects\mini_map\data\romania.json")
-# start, goal = "Oradea", "Iasi"          # <- user choices
+# start, goal = "Oradea", "Iasi"        
 # path, cost = a_star(nodes, start, goal)
 # print("Path:", " -> ".join(path) if path else "No path")
 # print("Cost:", cost if path else "∞")

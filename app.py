@@ -56,7 +56,7 @@ COMPLEXITY = {
         "Optimal?": "No (uses only h)"
     },
     "A*": {
-        "Time": "≈ O((V + E) log V); often much less if h is informative",
+        "Time": "≈ O((V + E) log V)",
         "Space": "O(V)",
         "Optimal?": "Yes if h is admissible; tree/graph-optimal if h is consistent"
     }
