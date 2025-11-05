@@ -40,9 +40,8 @@ def ucs(nodes, start, goal):
                 heapq.heappush(heap, (new_cost, v))
     return None, math.inf
 
-if __name__ == "__main__":
-    nodes = load_graph(r"D:\sejong_major\ai\projects\mini_map\data\uzbekistan.json")
-    start, goal = "Tashkent", "Bukhara"
-    path, cost = ucs(nodes, start, goal)
-    print("Dijkstra path:", " -> ".join(path))
-    print("Total cost:", round(cost, 1))
+# nodes = load_graph(r"D:\sejong_major\ai\projects\mini_map\data\uzbekistan.json")
+# start, goal = "Tashkent", "Bukhara"
+# path, cost = ucs(nodes, start, goal)
+# print("Dijkstra path:", " -> ".join(path))
+# print("Total cost:", round(cost, 1))

@@ -1,6 +1,6 @@
 import math, heapq, json
 
-# ----- distance / heuristic -----
+# ----- heuristic -----
 def haversine_km(a, b):
     if a is None or b is None:  # fallback if coords missing
         return 0.0

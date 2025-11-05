@@ -50,9 +50,8 @@ def greedy_best_first(nodes, start, goal):
                 heapq.heappush(heap, (h(v), v))
     return None, math.inf
 
-# if __name__ == "__main__":
-#     nodes = load_graph("uzbekistan_cities_graph_extended.json")
-#     start, goal = "Tashkent", "Bukhara"
-#     path, cost = greedy_best_first(nodes, start, goal)
-#     print("Greedy path:", " -> ".join(path))
-#     print("Approx. cost:", round(cost, 1))
+# nodes = load_graph("uzbekistan.json")
+# start, goal = "Tashkent", "Bukhara"
+# path, cost = greedy_best_first(nodes, start, goal)
+# print("Greedy path:", " -> ".join(path))
+# print("Approx. cost:", round(cost, 1))
