@@ -1,6 +1,6 @@
-# 🧭 PathFinder Lab — Interactive Graph Search Platform
+# 🧭 PathFinder — Interactive Graph Search Platform
 
-**PathFinder Lab** is an interactive **graph-search visualization system** built with **Streamlit**.  
+**PathFinder** is an interactive **graph-search visualization system** built with **Streamlit**.  
 It demonstrates how classical search algorithms explore real geographic networks and compute optimal routes between cities.
 
 ---
@@ -18,6 +18,28 @@ This app exposes how different algorithms navigate these structures.
 
 ### Multi-Country Graphs
 JSON-based graphs for Uzbekistan, Romania, USA, and others.
+
+---
+
+### Example Node
+```json
+{
+  "nodes": {
+    "Tashkent": {
+      "coords": [41.3111, 69.2797],
+      "edges": { "Samarkand": 310 }
+    }
+  }
+}
+```
+
+### Countries List
+```json
+{ "countries": ["Uzbekistan", "Romania", "USA"] }
+```
+
+---
+
 
 ### Algorithm Benchmarks
 A*, Dijkstra/UCS, Greedy Best-First, BFS, DFS.
@@ -113,28 +135,6 @@ Returns path, cost, runtime metrics, expansions, relaxations.
 ### 4. Visualization
 Interactive map + metrics display.
 
----
-
-# 🧩 JSON Graph Format
-
-### Example Node
-```json
-{
-  "nodes": {
-    "Tashkent": {
-      "coords": [41.3111, 69.2797],
-      "edges": { "Samarkand": 310 }
-    }
-  }
-}
-```
-
-### Countries List
-```json
-{ "countries": ["Uzbekistan", "Romania", "USA"] }
-```
-
----
 
 # 📊 Tech Stack
 
